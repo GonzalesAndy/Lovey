@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lov'Hey</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="icon" href="assets/images/LoveyLogo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+  <div class="gradient-bg"></div>
+  <div class="floating-shapes"></div>
+
+  <header class="app-header sticky">
+    <img src="assets/images/LoveyLogo.png" alt="Lovey Logo" class="app-logo" />
+    <h1><span class="heart"></span> Lovey <span class="heart"></span></h1>
+  </header>
+
+  <main class="games-container">
+    <div class="games-grid">
+        <div class="game-card"><i class="ph ph-game-controller"></i><span class="game-label">Jeu 1</span></div>
+        <div class="game-card"><i class="ph ph-dice-six"></i><span class="game-label">Jeu 2</span></div>
+        <div class="game-card"><i class="ph ph-puzzle-piece"></i><span class="game-label">Jeu 3</span></div>
+        <div class="game-card"><i class="ph ph-target"></i><span class="game-label">Jeu 4</span></div>
+        <div class="game-card"><i class="ph ph-device-mobile-speaker"></i><span class="game-label">Jeu 5</span></div>
+        <div class="game-card"><i class="ph ph-heart-straight-break"></i><span class="game-label">Jeu 6</span></div>
+        <div class="game-card"><i class="ph ph-balloon"></i><span class="game-label">Jeu 7</span></div>
+        <div class="game-card"><i class="ph ph-lightbulb"></i><span class="game-label">Jeu 8</span></div>
+    </div>
+  </main>
+
+  <nav class="bottom-nav">
+    <button class="nav-btn"><i class="ph ph-house"></i><span class="nav-label">Accueil</span></button>
+    <button class="nav-btn"><i class="ph ph-star"></i><span class="nav-label">Favoris</span></button>
+    <button class="nav-btn"><i class="ph ph-gear-six"></i><span class="nav-label">Réglages</span></button>
+  </nav>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
