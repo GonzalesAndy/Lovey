@@ -2,7 +2,9 @@ const CACHE_NAME = 'pwa-cache-v1';
 const URLS_TO_CACHE = [
   'index.html',
   'offline.html',
-  'main.css'
+  'styles/main.css',
+  'scripts/app.js',
+  'assets/images/LoveyLogo.png',
 ];
 
 // Installation
