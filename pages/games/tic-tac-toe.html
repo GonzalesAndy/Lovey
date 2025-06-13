@@ -1,5 +1,10 @@
 <div class="tic-tac-toe">
   <h2>Tic-Tac-Toe</h2>
+  <div class="ttt-scoreboard">
+    <span class="ttt-score ttt-score-x">X: 0</span>
+    <span class="ttt-score-sep">-</span>
+    <span class="ttt-score ttt-score-o">O: 0</span>
+  </div>
   <div class="ttt-board">
     <div class="ttt-cell" data-cell="0"></div>
     <div class="ttt-cell" data-cell="1"></div>
@@ -24,22 +29,44 @@
   }
   .tic-tac-toe h2 {
     font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 2.1rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #fff;
     letter-spacing: 1px;
     margin-bottom: 0.5rem;
     text-shadow: 0 2px 16px rgba(0, 0, 0, 0.18);
   }
+  .ttt-scoreboard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: -2rem;
+    margin-top: -1.2rem;
+    text-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  }
+  .ttt-score {
+    min-width: 3.5rem;
+    text-align: center;
+  }
+  .ttt-score-sep {
+    font-size: 1.2rem;
+    opacity: 0.7;
+  }
   .ttt-board {
     display: grid;
-    grid-template-columns: repeat(3, 70px);
-    grid-template-rows: repeat(3, 70px);
+    position: relative;
+    width: 250px;
+    height: 250px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 10px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 1rem;
     box-shadow: 0 2px 12px rgba(31, 38, 135, 0.1);
-    padding: 10px;
+    padding: 0;
   }
   .ttt-cell {
     width: 70px;
@@ -83,5 +110,17 @@
     box-shadow: 0 2px 8px rgba(255, 0, 80, 0.1);
     margin-top: 1rem;
     letter-spacing: 1px;
+  }
+  .ttt-cell.win-x {
+    background: #a1c4fd !important;
+    color: #fff;
+  }
+  .ttt-cell.win-o {
+    background: #ff9a9e !important;
+    color: #fff;
+  }
+  .ttt-cell.draw {
+    background: #b0b0b0 !important;
+    color: #fff;
   }
 </style>
