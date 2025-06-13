@@ -2,7 +2,7 @@ const CACHE_NAME = 'pwa-cache-v1';
 const URLS_TO_CACHE = [
   'index.html',
   'offline.html',
-  'style.css'
+  'main.css'
 ];
 
 // Installation
