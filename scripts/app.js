@@ -9,11 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cards.forEach((card, index) => {
     card.style.animationDelay = `${index * 200}ms`;
-    card.addEventListener('click', () => {
+    const handleCardSelect = () => {
       const label = card.querySelector('.game-label');
       if (label) {
         alert(`Vous avez sélectionné : ${label.textContent}`);
       }
-    });
+    };
+    card.addEventListener('click', handleCardSelect);
+    card.addEventListener('touchstart', handleCardSelect);
   });
 });
