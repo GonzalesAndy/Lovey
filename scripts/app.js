@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const handleCardSelect = () => {
       const label = card.querySelector('.game-label');
       if (label) {
-        alert(`Vous avez sélectionné : ${label.textContent}`);
+        alert(`Selected: ${label.textContent}`); // Replace alert()
       }
     };
-    card.addEventListener('click', handleCardSelect);
-    card.addEventListener('touchstart', handleCardSelect);
+    
+    card.addEventListener('pointerdown', handleCardSelect);
   });
 });

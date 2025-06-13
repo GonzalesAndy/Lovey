@@ -6,7 +6,7 @@ body {
   overflow-x: hidden;
   position: relative;
   text-shadow: 0 1px 3px rgba(0,0,0,0.2);
-
+  touch-action: manipulation;
 }
 
 .gradient-bg {
