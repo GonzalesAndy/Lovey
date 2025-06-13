@@ -9,19 +9,6 @@ body {
   touch-action: manipulation;
 }
 
-@supports (padding: max(0px)) {
-  body {
-    padding-top: env(safe-area-inset-top);
-    padding-bottom: env(safe-area-inset-bottom);
-  }
-  .app-header {
-    padding-top: env(safe-area-inset-top);
-  }
-  .bottom-nav {
-    padding-bottom: env(safe-area-inset-bottom);
-  }
-}
-
 .gradient-bg {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
