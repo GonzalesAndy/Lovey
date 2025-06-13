@@ -4,18 +4,17 @@ if ('serviceWorker' in navigator) {
       .catch(err => console.error('❌ Erreur service worker :', err));
   }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".game-card");
+import { bindTapHandler } from './utils/tap-handler.js';
 
-  cards.forEach((card, index) => {
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".game-card").forEach((card, index) => {
     card.style.animationDelay = `${index * 200}ms`;
-    const handleCardSelect = () => {
-      const label = card.querySelector('.game-label');
-      if (label) {
-        alert(`Selected: ${label.textContent}`); // Replace alert()
-      }
-    };
-    
-    card.addEventListener('pointerdown', handleCardSelect);
+  });
+
+  bindTapHandler('.game-card', (el) => {
+    const label = el.querySelector('.game-label');
+    if (label) {
+      alert(`Selected: ${label.textContent}`);
+    }
   });
 });
