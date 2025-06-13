@@ -19,7 +19,7 @@
   <div class="floating-shapes"></div>
 
   <header class="app-header sticky">
-    <img src="assets/images/LoveyLogo.png" alt="Lovey Logo" class="app-logo" />
+    <img src="assets/images/LoveyLogo.png" alt="Lovey Logo" class="app-logo" id="app-logo"/>
     <h1><span class="heart"></span> Lovey <span class="heart"></span></h1>
   </header>
 
@@ -41,6 +41,13 @@
     <button class="nav-btn"><i class="ph ph-star"></i><span class="nav-label">Favoris</span></button>
     <button class="nav-btn"><i class="ph ph-gear-six"></i><span class="nav-label">Réglages</span></button>
   </nav>
+
+  <template id="game-fullscreen-template">
+    <div id="game-fullscreen">
+      <button class="close-btn">&times;</button>
+      <div class="game-content"></div>
+    </div>
+  </template>
 
   <script type="module" src="scripts/app.js"></script>
 </body>
