@@ -1,10 +1,10 @@
 {
-  "name": "Lov'Hey",
-  "short_name": "Lov'Hey",
+  "name": "Lovey",
+  "short_name": "Lovey",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#2196f3",
+  "background_color": "#ff9a9e",
+  "theme_color": "#ff9a9e",
   "icons": [
     {
       "src": "assets/images/LoveyLogo.png",
