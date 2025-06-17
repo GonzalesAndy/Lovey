@@ -4,21 +4,11 @@ if ('serviceWorker' in navigator) {
       .catch(err => console.error('❌ Erreur service worker :', err));
   }
 
-import { bindTapHandler } from './utils/tap-handler.js';
 import { setupGameCardExpander } from './utils/gameCardExpander.js';
 import { getFirestore, collection, query, where, getDocs } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+import { firebaseConfig } from './firebase-config.js';
 
-// Firebase config (identique à index.html)
-const firebaseConfig = {
-  apiKey: "AIzaSyB_9CMyB0sVDqZRH8Dp1FU5KTPCNgyHt6c",
-  authDomain: "lovey-43925.firebaseapp.com",
-  projectId: "lovey-43925",
-  storageBucket: "lovey-43925.firebasestorage.app",
-  messagingSenderId: "741969244990",
-  appId: "1:741969244990:web:1aaa5e4b3df4cbf9ce326f",
-  measurementId: "G-GY3FTH29EY"
-};
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
