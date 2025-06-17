@@ -5,8 +5,8 @@ if ('serviceWorker' in navigator) {
   }
 
 import { setupGameCardExpander } from './utils/gameCardExpander.js';
-import { getFirestore, collection, query, where, getDocs } from "firebase/firestore";
-import { initializeApp } from "firebase/app";
+import { getFirestore, collection, query, where, getDocs } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 
 export const firebaseConfig = {
   apiKey: "AIzaSyB_9CMyB0sVDqZRH8Dp1FU5KTPCNgyHt6c",
@@ -25,9 +25,6 @@ async function checkUserCredentials(login, pwd) {
   const usersRef = collection(db, "users");
   const q = query(usersRef, where("login", "==", login), where("pwd", "==", pwd));
   const querySnapshot = await getDocs(q);
-  console.log(`Checking credentials for user: ${login}`);
-  console.log(usersRef, q);
-  console.log(`Found ${querySnapshot.size} matching documents.`);
   return !querySnapshot.empty;
 }
 
