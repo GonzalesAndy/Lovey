@@ -25,6 +25,15 @@
     <h1><span class="heart"></span> Lovey <span class="heart"></span></h1>
   </header>
 
+  <div id="login-modal" class="login-modal" style="display:none;">
+    <div class="login-modal-content">
+      <h2>Connexion</h2>
+      <input type="text" id="login-input" placeholder="Login" autocomplete="username" />
+      <input type="password" id="pwd-input" placeholder="Mot de passe" autocomplete="current-password" />
+      <button id="sign-in-btn">Se connecter</button>
+    </div>
+  </div>
+
   <main class="games-container">
     <div class="games-grid">
         <div class="game-card" data-game-id="tic-tac-toe"><i class="ph ph-game-controller"></i><span class="game-label">Tic-Tac-Toe</span></div>

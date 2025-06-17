@@ -93,7 +93,7 @@ export function initTicTacToe(container) {
     }
   
     function restartGame() {
-      if (restartBtn.textContent === "Restart Game") {
+      if (restartBtn.textContent === "New Game") {
         score = { X: 0, O: 0 };
         rounds = 0;
         bo3Winner = null;

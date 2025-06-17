@@ -311,3 +311,54 @@ body {
   max-height: 100vh;
   overflow: auto;
 }
+
+/* Login modal styles */
+.login-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-modal-content {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 270px;
+  gap: 1.2rem;
+}
+.login-modal-content h2 {
+  margin: 0 0 1rem 0;
+  color: #ff9a9e;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.login-modal-content input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid #ddd;
+  font-size: 1.1rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin-bottom: 0.5rem;
+}
+.login-modal-content button {
+  padding: 0.7rem 2.2rem;
+  border-radius: 0.7rem;
+  border: none;
+  background: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(255, 0, 80, 0.1);
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+}
